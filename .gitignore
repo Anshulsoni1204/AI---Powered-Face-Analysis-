@@ -1,0 +1,5 @@
+backend/models/
+venv/
+.venv/
+backend/__pycache__/
+.vscode/
