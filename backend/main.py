@@ -1,3 +1,4 @@
+import download_models
 from fastapi import FastAPI, UploadFile, File
 from ai.model_loader import load_models
 from ai.face_processor import process_face_image
