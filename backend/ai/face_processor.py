@@ -17,10 +17,11 @@ def process_face_image(image_bytes):
 
     np_arr = np.frombuffer(image_bytes, np.uint8)
 
+    if np_arr is None or len(np_arr) == 0:
+        return None, "Invalid or empty image file"
     img = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
-
     if img is None:
-        return None, "Invalid image"
+        return None, "Failed to decode image"
 
     h, w = img.shape[:2]
 

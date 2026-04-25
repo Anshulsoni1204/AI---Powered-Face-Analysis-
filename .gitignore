@@ -1,5 +1,8 @@
 backend/models/
+*.pth
+backend/models/
 venv/
 .venv/
-backend/__pycache__/
+__pycache__/
+*.pyc
 .vscode/

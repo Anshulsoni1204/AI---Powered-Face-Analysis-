@@ -1,9 +1,11 @@
 fastapi
 uvicorn
 numpy
-opencv-python
-mediapipe
+opencv-python-headless
+mediapipe==0.10.11
 torch
 torchvision
 python-multipart
-pillow`
+pillow
+
+
