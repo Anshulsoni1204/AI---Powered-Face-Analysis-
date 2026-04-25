@@ -3,7 +3,10 @@ import numpy as np
 import base64
 import mediapipe as mp
 
-mp_face = mp.solutions.face_detection.FaceDetection(0.6)
+mp_face = mp.solutions.face_detection.FaceDetection(    
+    model_selection=0,
+    min_detection_confidence=0.6
+)
 
 
 def encode_image(img):
